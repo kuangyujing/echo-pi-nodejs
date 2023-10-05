@@ -18,7 +18,7 @@ app.listen(process.env.PORT || 3000, () => {
     console.log('Server is up on port 3000')
 })
 
-app.get('/pi', (req, res) => {
+app.get('/', (req, res) => {
     const iterations = req.query.iterations || 10
     const result = pi(iterations + Math.trunc(Math.random() * iterations))
 
