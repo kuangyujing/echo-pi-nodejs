@@ -5,7 +5,9 @@ WORKDIR /usr/src/app
 COPY package*.json .
 COPY index.js .
 
-RUN tree -a
+RUN free -h
+RUN pwd
+RUN ls -la
 RUN npm install
 
 EXPOSE 3000
