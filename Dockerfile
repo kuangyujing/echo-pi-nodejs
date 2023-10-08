@@ -8,7 +8,7 @@ COPY index.js .
 RUN free -h
 RUN pwd
 RUN ls -la
-RUN npm install
+RUN npm install --no-fund
 
 EXPOSE 3000
 
