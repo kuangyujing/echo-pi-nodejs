@@ -5,9 +5,8 @@ WORKDIR /usr/src/app
 COPY package*.json .
 COPY index.js .
 
+RUN tree -a
 RUN npm install
-
-RUN ls -la
 
 EXPOSE 3000
 
