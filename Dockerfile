@@ -2,9 +2,12 @@ FROM node:lts
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package*.json .
+COPY index.js .
+
 RUN npm install
-COPY . .
+
+RUN ls -la
 
 EXPOSE 3000
 
